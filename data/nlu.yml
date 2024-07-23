@@ -3,89 +3,82 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-
+    - hola
+    - ¿cómo estás? 
+    - ¿qué tal?
+    - ¿qué onda?
+    - ¿cómo te va?
+    - ¿qué hay?
+    - ¿qué pasa?
+    - ¿qué cuentas?
+    - ¿qué hay de nuevo?
+    
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-
-- intent: affirm
+    - adiós
+    - hasta luego
+    - nos vemos
+    - chao
+    - hasta la vista
+    - hasta pronto
+    - hasta mañana
+    - hasta la próxima
+    - nos vemos luego
+    - nos vemos pronto
+    - nos vemos mañana
+    - nos vemos la próxima
+    - nos vemos luego
+    - nos vemos pronto
+    - nos vemos mañana
+    - nos vemos la próxima
+    - nos vemos luego
+    
+- intent: weather
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
-- intent: deny
+    - ¿cómo está el clima?
+    - ¿cómo está el clima [hoy](date-time)?
+    - ¿cómo está el clima [ahora](date-time)?
+    - ¿cómo está el clima [en este momento](date-time)?
+    - ¿cómo está el clima [actualmente](date-time)?
+    - ¿cómo está el clima [en este instante](date-time)?
+    - ¿cómo estará el clima [mañana](date-time)?
+    - ¿qué tiempo hace?
+    - ¿cómo está el tiempo?
+    - ¿cuál es la temperatura?
+    - ¿cuál es la temperatura [actual](date-time)?	
+    - ¿cuál es la temperatura [ahora](date-time)?
+    - ¿cuál es la temperatura [hoy](date-time)?
+    - ¿cuál es la temperatura [en este momento](date-time)?
+    - ¿cuál es la temperatura [actualmente](date-time)?
+    - ¿cuál es la temperatura [en este instante](date-time)?
+    - ¿cuál será la temperatura [mañana](date-time)?	
+    - ¿cómo estará el clima [hoy](date-time) en [Ciudad de México](address)? 
+    - ¿cómo estará el clima [mañana](date-time) en [Ciudad de México](address)?
+    - ¿cómo estará el clima [hoy](date-time) en [Guadalajara](address)?
+    - ¿cómo estará el clima [mañana](date-time) en [Guadalajara](address)?
+    - ¿cuál será la temperatura [hoy](date-time) en [Ciudad de México](address)?
+    - ¿cuál será la temperatura [mañana](date-time) en [Ciudad de México](address)?
+    - ¿cuál será la temperatura [hoy](date-time) en [Guadalajara](address)?
+    - ¿cuál será la temperatura [mañana](date-time) en [Guadalajara](address)?
+    
+- intent: info_date
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - [Mañana](date-time)
+    - [Hoy](date-time)
+    - [En este momento](date-time)
+    - [Actualmente](date-time)
+    - [En este instante](date-time)
+    - [ahora](date-time)
+    - [actual](date-time)
+    - [en este instante](date-time)
+    - [ahorita](date-time)
+    - [pasado mañana](date-time)
+    - [pasadomañana](date-time)
 
-- intent: mood_great
+- intent: info_address
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - Dime más acerca de [Ciudad de México](address)
+    - En [Guadalajara](address)
+    - Estoy en [Monterrey](address)
+    - Visitaré [Puebla](address)
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
