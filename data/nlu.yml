@@ -74,6 +74,8 @@ nlu:
     - [ahorita](date-time)
     - [pasado mañana](date-time)
     - [pasadomañana](date-time)
+    - [antier](date-time)
+    - [anteayer](date-time)
 
 - intent: info_address
   examples: |
@@ -81,4 +83,60 @@ nlu:
     - En [Guadalajara](address)
     - Estoy en [Monterrey](address)
     - Visitaré [Puebla](address)
+
+- synonym: Hoy
+  examples: |
+    - hoy
+    - durante el día
+    - en el día
+    - en el transcurso del día
+    - el día de hoy
+
+- synonym: Mañana
+  examples: |
+    - mañana
+    - al día siguiente
+    - al día siguiente de hoy
+
+- synonym: Pasado mañana
+  examples: |
+    - pasado mañana
+    - al día siguiente de mañana
+    - pasadomañana
+
+- synonym: Antier
+  examples: |
+    - antier
+    - antes de ayer
+    - anteayer
+
+- synonym: Ciudad de México
+  examples: |
+    - la Ciudad de México
+    - CDMX
+    - Distrito Federal
+    - DF
+    - la capital
+
+- synonym: Guadalajara
+  examples: |
+    - Guadalajara
+    - la perla tapatía
+    - la capital del mariachi
+
+- synonym: Monterrey
+  examples: |
+    - Monterrey
+    - la sultana del norte
+    - la capital industrial
+
+- synonym: Puebla
+  examples: |
+    - Puebla
+    - la ciudad de los ángeles
+    - la ciudad de las flores
+    
+
+
+
 
