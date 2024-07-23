@@ -20,12 +20,21 @@ slots:
     type: text
     auto_fill: false
     influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: address
   date-time:
     type: text
     auto_fill: false
     influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: date-time
   requested_slot:
     type: any
+    mappings: 
+      - type: from_entity
+        entity: requested_slot
 
 responses:
   utter_greet:
@@ -36,7 +45,7 @@ responses:
     - text: "¿De qué fecha deseas información?"
   utter_ask_address:
     - text: "¿De qué ciudad deseas información?"
-  utter_default;
+  utter_default:
     - text: "Lo siento, no entendí. ¿Podrías repetirlo?"
 
 actions:
@@ -49,9 +58,6 @@ actions:
 
 forms:
   weather_form:
-    date-time:
-      - entity: date-time
-        type: from_entity
-    address:
-      - entity: address
-        type: from_entity
+    required_slots:
+      - date-time
+      - address

@@ -12,7 +12,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-from service.weather_service import get_text_weather_date
+from service.weather import get_text_weather_date
 from service.normalization import text_to_date, text_to_coordinate 
 
 class ActionWeatherFormSubmit(Action):
