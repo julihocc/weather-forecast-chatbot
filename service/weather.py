@@ -1,13 +1,15 @@
 import datetime
 import os
 from typing import Dict, Optional
-
+from dotenv import load_dotenv
+from pyowm.owm import OWM
 from requests import ConnectionError, HTTPError, Timeout, TooManyRedirects
 
-owm_api_key = os.getenv("OWM_KEY", "")  # API key
-assert owm_api_key
+load_dotenv()
+api_key = os.getenv('API_KEY')
 
-from pyowm.owm import OWM
+owm_api_key = os.getenv("OWM_KEY", api_key)  # API key
+assert owm_api_key
 
 owm = OWM(owm_api_key)
 mgr = owm.weather_manager()
