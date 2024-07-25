@@ -5,7 +5,7 @@ stories:
     steps:
       - intent: greet
       - action: utter_greet
-  - story; say goodbye
+  - story: say goodbye
     steps:
       - intent: goodbye
       - action: utter_goodbye

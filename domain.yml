@@ -18,14 +18,12 @@ entities:
 slots:
   address:
     type: text
-    auto_fill: false
     influence_conversation: false
     mappings:
       - type: from_entity
         entity: address
   date-time:
     type: text
-    auto_fill: false
     influence_conversation: false
     mappings:
       - type: from_entity
