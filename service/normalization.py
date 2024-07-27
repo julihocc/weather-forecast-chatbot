@@ -1,9 +1,16 @@
 import datetime
 from typing import Optional, Tuple
+from dotenv import load_dotenv
+import os
 
 from pyowm.owm import OWM
 
-reg = OWM("not-actually-used-key").city_id_registry()
+load_dotenv()
+owm_api_key = os.getenv("OWM_KEY")  # A
+assert owm_api_key
+print(f"OWM_KEY: {owm_api_key}")
+
+reg = OWM(owm_api_key).city_id_registry()
 
 
 def text_to_coordinate(text_city: str) -> Tuple[float, float]:
@@ -29,19 +36,19 @@ def text_to_date(text_date: str) -> Optional[datetime.date]:
     today = datetime.datetime.now()
     one_more_day = datetime.timedelta(days=1)
 
-    if text_date == "today":
+    if text_date == "hoy":
         return today.date()
-    if text_date == "tomorrow":
+    if text_date == "mañana":
         return (today + one_more_day).date()
-    if text_date == "the day after tomorrow":
+    if text_date == "pasado mañana":
         return (today + one_more_day * 2).date()
 
     # not supported
-    if text_date in ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]:
+    if text_date in ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]:
         return None
 
     # not supported
-    if text_date in ["yesterday"]:
+    if text_date in ["ayer", "anteayer"]:
         return None
 
     # anything else

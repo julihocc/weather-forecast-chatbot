@@ -26,7 +26,7 @@ class ActionWeatherFormSubmit(Action):
 
         city = tracker.get_slot("address")
         date_text = tracker.get_slot("date-time")
-        
+                
         date_object = text_to_date(date_text)
         
         if not date_object:
@@ -36,8 +36,9 @@ class ActionWeatherFormSubmit(Action):
         else:
             dispatcher.utter_message(template="utter_working_on_it")
             try: 
+                dispatcher.utter_message(f"City: {city}, Date: {date_text}")
                 lat, lon = text_to_coordinate(city)
-                weather_data = get_text_weather_date(lat, lon, date_text, city)
+                weather_data = get_text_weather_date(lat, lon, date_object, date_text, city)
             except Exception as e:
                 exec_msg = str(e)
                 dispatcher.utter_message(f"Error: {exec_msg}")

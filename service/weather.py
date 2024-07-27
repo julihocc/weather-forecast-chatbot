@@ -6,10 +6,9 @@ from pyowm.owm import OWM
 from requests import ConnectionError, HTTPError, Timeout, TooManyRedirects
 
 load_dotenv()
-api_key = os.getenv('API_KEY')
-
-owm_api_key = os.getenv("OWM_KEY", api_key)  # API key
+owm_api_key = os.getenv("OWM_KEY")  # A
 assert owm_api_key
+print(f"OWM_KEY: {owm_api_key}")
 
 owm = OWM(owm_api_key)
 mgr = owm.weather_manager()
@@ -69,6 +68,7 @@ def get_weather_by_date(
 def get_text_weather_date(
     lat: float, lon: float, date: datetime.date, text_date: str, text_city: str
 ) -> str:
+    
     try:
         result = get_weather_by_date(
             lat, lon, date

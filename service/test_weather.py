@@ -17,6 +17,6 @@ def test_get_weather_by_date():
 
 
 def test_get_text_weather_date():
-    text_weather = get_text_weather_date(31.222219, 121.458061, today, "Shanghai", "today")
+    text_weather = get_text_weather_date(31.222219, 121.458061, today, "Shanghai", "hoy")
 
     assert text_weather

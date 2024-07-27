@@ -63,11 +63,11 @@ nlu:
     
 - intent: info_date
   examples: |
-    - [Mañana](date-time)
-    - [Hoy](date-time)
-    - [En este momento](date-time)
-    - [Actualmente](date-time)
-    - [En este instante](date-time)
+    - [mañana](date-time)
+    - [hoy](date-time)
+    - [en este momento](date-time)
+    - [actualmente](date-time)
+    - [en este instante](date-time)
     - [ahora](date-time)
     - [actual](date-time)
     - [en este instante](date-time)
@@ -84,7 +84,7 @@ nlu:
     - Estoy en [Monterrey](address)
     - Visitaré [Puebla](address)
 
-- synonym: Hoy
+- synonym: hoy
   examples: |
     - hoy
     - durante el día
@@ -92,19 +92,19 @@ nlu:
     - en el transcurso del día
     - el día de hoy
 
-- synonym: Mañana
+- synonym: mañana
   examples: |
     - mañana
     - al día siguiente
     - al día siguiente de hoy
 
-- synonym: Pasado mañana
+- synonym: pasado mañana
   examples: |
     - pasado mañana
     - al día siguiente de mañana
     - pasadomañana
 
-- synonym: Antier
+- synonym: antier
   examples: |
     - antier
     - antes de ayer
