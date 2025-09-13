@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weather-forecast-chatbot"
+version = "1.0.0"
+description = "A Spanish weather chatbot built with Rasa framework"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "rasa",
+    "rasa-sdk",
+    "pyowm",
+    "python-dotenv",
+    "spacy"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest"
+]
+
+[tool.setuptools]
+packages = ["actions", "service"]

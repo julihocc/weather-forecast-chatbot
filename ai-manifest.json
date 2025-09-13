@@ -1,0 +1,15 @@
+{
+  "name": "Weather Forecast Chatbot",
+  "version": "1.0.0",
+  "description": "A Spanish weather chatbot built with Rasa framework that provides weather forecasts",
+  "author": "julihocc",
+  "license": "MIT",
+  "repository": "https://github.com/julihocc/weather-forecast-chatbot",
+  "keywords": ["rasa", "chatbot", "weather", "forecast", "spanish"],
+  "dependencies": {
+    "rasa": ">=3.0",
+    "rasa-sdk": ">=3.0",
+    "pyowm": ">=3.0",
+    "spacy": ">=3.0"
+  }
+}

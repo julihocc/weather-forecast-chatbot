@@ -1,3 +1,5 @@
+# Weather Forecast Chatbot v1.0.0
+
 ## installation
 
 Beside rasa, you also need install `pyowm`:

@@ -1,4 +1,4 @@
-# Weather Forecast Chatbot - AI Agent Instructions
+# Weather Forecast Chatbot v1.0.0 - AI Agent Instructions
 
 ## Architecture Overview
 This is a Spanish weather chatbot built with Rasa framework. The architecture follows a modular service pattern:
