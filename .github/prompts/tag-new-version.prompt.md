@@ -4,14 +4,17 @@ mode: agent
 
 ---
 
-- Execute .github/prompts/update-documentation.prompt.md to ensure all documentation and version references are up to date.
 
-- Inspect Git History and identify version
 
-- Inspect toml files for version information
+\- Execute .github/prompts/update-documentation.prompt.md to ensure all documentation and version references are up to date.
 
-- Determine the new version number
+\- Inspect Git History and identify version
 
-- Update the version in the codebase
+\- Inspect toml files for version information
 
-- Tag the release in Git and push the tags
+\- Determine the new version number
+
+\- Update the version in the codebase
+
+\- Tag the release in Git and push the tags
+
